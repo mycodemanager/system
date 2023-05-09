@@ -1,7 +1,7 @@
 export interface MenuRouterType{
     path: string;
     label: string;
-    icon: string;
+    icon?: string;
     key: string;
     element: JSX.Element;
     children?: Array<MenuRouterType>;

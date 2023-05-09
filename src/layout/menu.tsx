@@ -1,19 +1,25 @@
 import { Layout, Menu } from 'antd';
+import type { MenuProps } from 'antd';
 import { menuRouter } from "@/router/index.tsx"
+import { useNavigate } from 'react-router-dom';
 const { Sider } = Layout;
 
 export default function MenuDom() {
+    const navigate = useNavigate();
+    const onMenuRouter: MenuProps['onClick'] = ({ key }) => {
+        const routerPath = `/layout/${key}`
+        navigate(routerPath)
+    }
     return <Sider
-        style={{
-            overflow: 'auto',
-            height: '100vh',
-            position: 'fixed',
-            left: 0,
-            top: 0,
-            bottom: 0,
+        breakpoint="lg"
+        collapsedWidth="0"
+        onBreakpoint={(broken) => {
+            console.log(broken);
+        }}
+        onCollapse={(collapsed, type) => {
+            console.log(collapsed, type);
         }}
     >
-        <div style={{ height: 32, margin: 16, background: 'rgba(255, 255, 255, 0.2)' }} />
-        <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']} items={menuRouter} />
+        <Menu onClick={onMenuRouter} theme="dark" mode="inline" items={menuRouter} />
     </Sider>
 }

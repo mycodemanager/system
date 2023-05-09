@@ -5,7 +5,7 @@ import { } from '@ant-design/icons';
 
 export const menuRouter: MenuRouterType[] = [
     {
-        path: '/',
+        path: 'home',
         key: "home",
         label: "主页",
         icon: "",
@@ -25,22 +25,20 @@ const publicRouter: MenuRouterType[] = [
         path: 'log-in',
         key: "log-in",
         label: "登录",
-        icon: "",
         element: RouteWithSubRoutes(lazy(() => import("@/pages/auth/signIn")))
     },
     {
         path: 'sign-up',
         key: "sign-up",
         label: "注册",
-        icon: "",
         element: RouteWithSubRoutes(lazy(() => import("@/pages/auth/signUp")))
     },
     {
         path: 'layout',
         key: "layout",
         label: "layout",
-        icon: "",
-        element: RouteWithSubRoutes(lazy(() => import("@/layout/index")))
+        element: RouteWithSubRoutes(lazy(() => import("@/layout/index"))),
+        children: menuRouter
     },
 ]
 
