@@ -1,5 +1,5 @@
 import React, { lazy } from 'react';
-import { useRoutes } from 'react-router-dom';
+import { useRoutes,Navigate } from 'react-router-dom';
 import { MenuRouterType } from "@/types/router.ts"
 import { } from '@ant-design/icons';
 
@@ -21,6 +21,12 @@ export const menuRouter: MenuRouterType[] = [
 ]
 
 const publicRouter: MenuRouterType[] = [
+    {
+        path: '/',
+        key: "/",
+        label: "登录",
+        element: <Navigate to={"/login"} />
+    },
     {
         path: 'log-in',
         key: "log-in",

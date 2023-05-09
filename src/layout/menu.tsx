@@ -10,16 +10,6 @@ export default function MenuDom() {
         const routerPath = `/layout/${key}`
         navigate(routerPath)
     }
-    return <Sider
-        breakpoint="lg"
-        collapsedWidth="0"
-        onBreakpoint={(broken) => {
-            console.log(broken);
-        }}
-        onCollapse={(collapsed, type) => {
-            console.log(collapsed, type);
-        }}
-    >
-        <Menu onClick={onMenuRouter} theme="dark" mode="inline" items={menuRouter} />
-    </Sider>
+    return <Menu onClick={onMenuRouter}  mode="inline" items={menuRouter} />
+
 }
