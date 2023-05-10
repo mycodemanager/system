@@ -12,10 +12,14 @@
     "message": {
         "success": "成功",
         "fail": "失败",
-        "pwd": "密码不正确"
+        "pwd": "密码不正确",
+        "account": "账号不正确"
     },
     "action": {},
     "router": {},
     "columns": {},
-    "login": {}
+    "login": {
+        "rememberPwd": "记住账号",
+        "loginBtn": "登录"
+    }
 }
