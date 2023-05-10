@@ -6,3 +6,6 @@
     import type { T } from 'only/types'
     export type { T }
  ```
+ 
+ # 国际化配置
+ 1、下载i18n ally 插件，便于在开发过程中维护语料
