@@ -1,22 +1,50 @@
 import React, { lazy } from 'react';
 import { useRoutes,Navigate } from 'react-router-dom';
 import { MenuRouterType } from "@/types/router.ts"
-import { } from '@ant-design/icons';
+import { AppstoreOutlined,SettingOutlined } from '@ant-design/icons';
 
 export const menuRouter: MenuRouterType[] = [
     {
         path: 'home',
         key: "home",
         label: "主页",
-        icon: "",
-        element: RouteWithSubRoutes(lazy(() => import("@/pages/home/index.tsx")))
+        icon: <AppstoreOutlined />,
+        element: RouteWithSubRoutes(lazy(() => import("@/pages/home/index.tsx"))),
+        meta:{
+            title: "主页",
+            auth:1,
+            keepAlive:true
+        }
     },
     {
         path: 'setting',
         key: "setting",
         label: "设置",
-        icon: "",
-        element: RouteWithSubRoutes(lazy(() => import("@/pages/seting/index.tsx")))
+        icon: <SettingOutlined />,
+        children:[
+            {
+                path: 'user',
+                key: "user",
+                label: "用户管理",
+                element: RouteWithSubRoutes(lazy(() => import("@/pages/seting/user"))),
+                meta:{
+                    title: "用户管理",
+                    auth:1,
+                    keepAlive:true
+                }
+            },
+            {
+                path: 'role',
+                key: "role",
+                label: "角色管理",
+                element: RouteWithSubRoutes(lazy(() => import("@/pages/seting/role"))),
+                meta:{
+                    title: "角色管理",
+                    auth:2,
+                    keepAlive:true
+                }
+            },
+        ]
     },
 ]
 

@@ -31,6 +31,7 @@ export default function SignIn() {
         } else {
             localStorage.removeItem("userLoginInfo");
         }
+        localStorage.setItem("system_token","测试token")
         navigate("/layout/home")
     };
 
