@@ -2,6 +2,7 @@ import React, { lazy } from 'react';
 import { useRoutes,Navigate } from 'react-router-dom';
 import { MenuRouterType } from "@/types/router.ts"
 import { AppstoreOutlined,SettingOutlined } from '@ant-design/icons';
+import Loading from "./loading"
 
 export const menuRouter: MenuRouterType[] = [
     {
@@ -77,7 +78,7 @@ const publicRouter: MenuRouterType[] = [
 ]
 
 function RouteWithSubRoutes(Children: React.LazyExoticComponent<() => JSX.Element>) {
-    return <React.Suspense fallback={<div>Loading...</div>}>
+    return <React.Suspense fallback={<Loading />}>
         <Children />
     </React.Suspense>
 }

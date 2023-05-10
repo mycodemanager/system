@@ -1,4 +1,4 @@
-export interface MenuRouterType{
+export interface MenuRouterType {
     path: string;
     label: string;
     icon?: JSX.Element;
@@ -9,4 +9,5 @@ export interface MenuRouterType{
     hidden?: boolean;
     meta?: any;
     redirect?: string;
+    isLoading?: boolean
 }

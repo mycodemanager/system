@@ -12,10 +12,14 @@
     "message": {
         "success": "Success",
         "fail": "Fail",
-        "pwd": "Password is incorrect"
+        "pwd": "Password is incorrect",
+        "account": "Account number is incorrect"
     },
     "action": {},
     "router": {},
     "columns": {},
-    "login": {}
+    "login": {
+        "rememberPwd": "Remember Account",
+        "loginBtn": "Login"
+    }
 }
