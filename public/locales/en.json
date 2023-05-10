@@ -1,0 +1,21 @@
+{
+    "button": {
+        "save": "Save",
+        "cancle": "Cancle",
+        "add": "Add",
+        "edit": "Edit",
+        "delete": "Delete",
+        "search": "Search",
+        "export": "Export",
+        "import": "Import"
+    },
+    "message": {
+        "success": "Success",
+        "fail": "Fail",
+        "pwd": "Password is incorrect"
+    },
+    "action": {},
+    "router": {},
+    "columns": {},
+    "login": {}
+}

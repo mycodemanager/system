@@ -25,7 +25,7 @@ const publicRouter: MenuRouterType[] = [
         path: '/',
         key: "/",
         label: "登录",
-        element: <Navigate to={"/login"} />
+        element: <Navigate to={"/log-in"} />
     },
     {
         path: 'log-in',

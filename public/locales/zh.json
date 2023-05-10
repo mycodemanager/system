@@ -1,0 +1,21 @@
+{
+    "button": {
+        "save": "保存",
+        "cancle": "取消",
+        "add": "添加",
+        "edit": "编辑",
+        "delete": "删除",
+        "search": "搜索",
+        "export": "出口",
+        "import": "导入"
+    },
+    "message": {
+        "success": "成功",
+        "fail": "失败",
+        "pwd": "密码不正确"
+    },
+    "action": {},
+    "router": {},
+    "columns": {},
+    "login": {}
+}
