@@ -21,5 +21,8 @@
     "login": {
         "rememberPwd": "记住账号",
         "loginBtn": "登录"
+    },
+    "header":{
+        "styleDrawerTitle":"皮肤配置"
     }
 }
