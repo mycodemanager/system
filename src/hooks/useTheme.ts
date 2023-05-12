@@ -1,9 +1,5 @@
 import darkConfig from "@/json/drrk.json"
 import lightConfig from "@/json/light.json"
-import {theme} from "antd"
-
-console.log(theme);
-
 
 let dark = darkConfig;
 let light = lightConfig;
