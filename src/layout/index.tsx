@@ -7,7 +7,6 @@ const { Header, Content, Footer, Sider } = Layout;
 
 export default function LayoutDom() {
     const { token: { colorBgContainer }, } = theme.useToken();
-    console.log(colorBgContainer);
 
     return <Layout style={{ height: "100vh", background: colorBgContainer }}>
         <Sider

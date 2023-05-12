@@ -1,29 +1,37 @@
 import { Button, Space, Popover, Radio } from 'antd';
 import { useTranslation } from 'react-i18next';
-import { useState, useContext } from 'react';
+import { useState, useContext, useSyncExternalStore } from 'react';
 import { ChromePicker } from 'react-color';
 import { useTheme } from "@/hooks/useTheme"
+import dark from "@/json/drrk.json"
+import light from "@/json/light.json"
 
-const { ThemeConfig, styleConfig} = useTheme()
+
+
 
 export default function GlobalStyle() {
+    const { todosStore,  } = useTheme()
+    const state = useSyncExternalStore(todosStore.subscribe, todosStore.getSnapshot)
     const [colorPrimary, setColorPrimary] = useState("#A162F7");
-    // const { t, i18n } = useTranslation();
-    const { theme, setTheme } = useContext(ThemeConfig);
 
+    // 改变主题色
     function onChangeColor(colors: any) {
         setColorPrimary(colors.hex)
-        styleConfig[theme.style].token.colorPrimary = colors.hex;
-        const obj = Object.assign(theme,styleConfig)
-        setTheme(obj)
-        console.log(obj,theme,1111);
-        
+        if(JSON.parse(state).model === "light"){
+            light.token.colorPrimary = colors.hex
+            todosStore.addTodo({ key: "light", value: JSON.stringify(light) })
+            return
+        }
+        if(JSON.parse(state).model === "dark"){
+            dark.token.colorPrimary = colors.hex
+            todosStore.addTodo({ key: "dark", value: JSON.stringify(dark) })
+            return
+        }
     };
 
+    // 改变模式
     function onChangeModel(e: any) {
-        setTheme((obj: any) => ({ ...obj, style: e.target.value }))
-        console.log(theme,2222);
-        
+        todosStore.addTodo({ key: "model", value: e.target.value })
     };
 
     return <>
@@ -40,6 +48,7 @@ export default function GlobalStyle() {
                     <Radio.Button value="light">白天</Radio.Button>
                     <Radio.Button value="dark">黑夜</Radio.Button>
                 </Radio.Group>
+
             </Space>
         </Space></>
 }

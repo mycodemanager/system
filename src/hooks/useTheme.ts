@@ -1,33 +1,49 @@
-import { theme } from 'antd';
-import { createContext } from 'react'
+import darkConfig from "@/json/drrk.json"
+import lightConfig from "@/json/light.json"
 
-const ThemeConfig = createContext<any>(null)
+let dark = darkConfig;
+let light = lightConfig;
+let model = "light"
 
-const styleConfig: { [key: string]: any } = {
-    dark: {
-        token: {
-            colorPrimary: '#A162F7',//主题色配置
-        },
-        //自定义组件主题
-        components: {
-        },
+let listeners: Function[] = [];
+
+export const todosStore = {
+    addTodo({ key, value }: any) {
+        switch (key) {
+            case "model":
+                model = value;
+                break;
+            case "dark":
+                dark =  JSON.parse(value);
+                break;
+            case "light":
+                light = JSON.parse(value);
+                break;
+            default:
+                break;
+        }
+        emitChange();
     },
-    light: {
-        token: {
-            colorPrimary: '#00b96b',//主题色配置s
-        },
-        //自定义组件主题
-        components: {
-            Menu: {
-                colorPrimary: "#A162F7"
-            }
-        },
+    subscribe(listener: Function) {
+        listeners = [...listeners, listener];
+        return () => {
+            listeners = listeners.filter(l => l !== listener);
+        };
+    },
+    getSnapshot() {
+        return JSON.stringify({ model, dark, light });
+    }
+};
+
+function emitChange() {
+    for (let listener of listeners) {
+        listener();
     }
 }
 
+
 export function useTheme() {
     return {
-        styleConfig,
-        ThemeConfig
+        todosStore,
     }
 }
