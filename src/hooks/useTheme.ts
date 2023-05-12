@@ -1,5 +1,9 @@
 import darkConfig from "@/json/drrk.json"
 import lightConfig from "@/json/light.json"
+import {theme} from "antd"
+
+console.log(theme);
+
 
 let dark = darkConfig;
 let light = lightConfig;
@@ -7,7 +11,7 @@ let model = "light"
 
 let listeners: Function[] = [];
 
-export const todosStore = {
+const todosStore = {
     addTodo({ key, value }: any) {
         switch (key) {
             case "model":
