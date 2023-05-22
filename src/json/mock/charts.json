@@ -1,0 +1,212 @@
+[
+    {
+        "outCount": 1204,
+        "outProfit": 2900677,
+        "settleDate": "20230401",
+        "inCount": 1284,
+        "inProfit": 6930437
+    },
+    {
+        "outCount": 536,
+        "outProfit": 1278036,
+        "settleDate": "20230402",
+        "inCount": 1146,
+        "inProfit": 5744296
+    },
+    {
+        "outCount": 528,
+        "outProfit": 1208876,
+        "settleDate": "20230403",
+        "inCount": 537,
+        "inProfit": 2913832
+    },
+    {
+        "outCount": 618,
+        "outProfit": 1465445,
+        "settleDate": "20230404",
+        "inCount": 1221,
+        "inProfit": 6549211
+    },
+    {
+        "outCount": 691,
+        "outProfit": 1607988,
+        "settleDate": "20230405",
+        "inCount": 702,
+        "inProfit": 3854354
+    },
+    {
+        "outCount": 554,
+        "outProfit": 1461897,
+        "settleDate": "20230406",
+        "inCount": 824,
+        "inProfit": 4133234
+    },
+    {
+        "outCount": 440,
+        "outProfit": 1015527,
+        "settleDate": "20230407",
+        "inCount": 1110,
+        "inProfit": 5743319
+    },
+    {
+        "outCount": 621,
+        "outProfit": 1469982,
+        "settleDate": "20230408",
+        "inCount": 588,
+        "inProfit": 3241117
+    },
+    {
+        "outCount": 518,
+        "outProfit": 1181948,
+        "settleDate": "20230409",
+        "inCount": 496,
+        "inProfit": 2695489
+    },
+    {
+        "outCount": 944,
+        "outProfit": 2139406,
+        "settleDate": "20230410",
+        "inCount": 1007,
+        "inProfit": 5929236
+    },
+    {
+        "outCount": 701,
+        "outProfit": 2041460,
+        "settleDate": "20230411",
+        "inCount": 879,
+        "inProfit": 4681146
+    },
+    {
+        "outCount": 652,
+        "outProfit": 1907108,
+        "settleDate": "20230412",
+        "inCount": 1098,
+        "inProfit": 5771851
+    },
+    {
+        "outCount": 578,
+        "outProfit": 1371292,
+        "settleDate": "20230413",
+        "inCount": 1084,
+        "inProfit": 3939417
+    },
+    {
+        "outCount": 711,
+        "outProfit": 1478491,
+        "settleDate": "20230414",
+        "inCount": 1116,
+        "inProfit": 3993503
+    },
+    {
+        "outCount": 924,
+        "outProfit": 1723404,
+        "settleDate": "20230415",
+        "inCount": 1570,
+        "inProfit": 5362831
+    },
+    {
+        "outCount": 816,
+        "outProfit": 1338753,
+        "settleDate": "20230416",
+        "inCount": 2053,
+        "inProfit": 7922418
+    },
+    {
+        "outCount": 1129,
+        "outProfit": 2069555,
+        "settleDate": "20230417",
+        "inCount": 1495,
+        "inProfit": 4833985
+    },
+    {
+        "outCount": 1139,
+        "outProfit": 1240609,
+        "settleDate": "20230418",
+        "inCount": 2374,
+        "inProfit": 6719529
+    },
+    {
+        "outCount": 1309,
+        "outProfit": 3078518,
+        "settleDate": "20230419",
+        "inCount": 2802,
+        "inProfit": 9555732
+    },
+    {
+        "outCount": 1922,
+        "outProfit": 1069450,
+        "settleDate": "20230420",
+        "inCount": 3439,
+        "inProfit": 11279429
+    },
+    {
+        "outCount": 2873,
+        "outProfit": 1698208,
+        "settleDate": "20230421",
+        "inCount": 3406,
+        "inProfit": 10900120
+    },
+    {
+        "outCount": 2813,
+        "outProfit": 3118653,
+        "settleDate": "20230422",
+        "inCount": 2805,
+        "inProfit": 8647148
+    },
+    {
+        "outCount": 2471,
+        "outProfit": 3466716,
+        "settleDate": "20230423",
+        "inCount": 2920,
+        "inProfit": 9706787
+    },
+    {
+        "outCount": 3312,
+        "outProfit": 4369178,
+        "settleDate": "20230424",
+        "inCount": 3310,
+        "inProfit": 11949420
+    },
+    {
+        "outCount": 3679,
+        "outProfit": 5051129,
+        "settleDate": "20230425",
+        "inCount": 3654,
+        "inProfit": 13247565
+    },
+    {
+        "outCount": 4673,
+        "outProfit": 6343480,
+        "settleDate": "20230426",
+        "inCount": 4089,
+        "inProfit": 15478627
+    },
+    {
+        "outCount": 3271,
+        "outProfit": 4933467,
+        "settleDate": "20230427",
+        "inCount": 4536,
+        "inProfit": 17061377
+    },
+    {
+        "outCount": 4121,
+        "outProfit": 6305361,
+        "settleDate": "20230428",
+        "inCount": 6040,
+        "inProfit": 26203274
+    },
+    {
+        "outCount": 4053,
+        "outProfit": 6092914,
+        "settleDate": "20230429",
+        "inCount": 5916,
+        "inProfit": 26120345
+    },
+    {
+        "outCount": 4168,
+        "outProfit": 6329554,
+        "settleDate": "20230430",
+        "inCount": 5831,
+        "inProfit": 22447930
+    }
+]

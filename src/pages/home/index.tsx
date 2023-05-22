@@ -1,3 +1,6 @@
+import Trend from "./components/Trend"
 export default function Home() {
-    return <>12345678</>
+    return <>
+        <Trend />
+    </>
 }
