@@ -9,3 +9,15 @@
  
  # 国际化配置
  1、下载i18n ally 插件，便于在开发过程中维护语料
+ # message提示使用方法
+ ``` ts
+window.$message.success("message")
+ ```
+ # notification(通知)提示使用方法
+  ``` ts
+window.$notification.info("message")
+ ```
+ # modal（对话框）提示使用方法
+  ``` ts
+window.$modal.warning("message")
+ ```
