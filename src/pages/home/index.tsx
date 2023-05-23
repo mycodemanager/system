@@ -1,5 +1,5 @@
 import Trend from "./components/Trend";
-import { Button, App } from "antd"
+import { Button } from "antd"
 export default function Home() {
     function onMessage() {
         window.$message.success("nihao ")

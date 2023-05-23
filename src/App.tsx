@@ -2,7 +2,7 @@ import './App.css'
 import { useSyncExternalStore } from 'react'
 import { RenderRoutes } from "@/router/index.tsx"
 import { HashRouter } from 'react-router-dom';
-import { ConfigProvider, App } from 'antd';
+import { ConfigProvider, App, Watermark } from 'antd';
 import { useTheme } from "@/hooks/useTheme"
 import BeforRouter from "@/router/beforRouter"
 
@@ -15,11 +15,13 @@ function AppRender() {
     <>
       <ConfigProvider theme={{ ...JSON.parse(state)[JSON.parse(state).model] }}>
         <App>
-          <HashRouter>
-            <BeforRouter>
-              <RenderRoutes />
-            </BeforRouter>
-          </HashRouter>
+          <Watermark content="福如东海老王八">
+            <HashRouter>
+              <BeforRouter>
+                <RenderRoutes />
+              </BeforRouter>
+            </HashRouter>
+          </Watermark>
         </App>
       </ConfigProvider>
     </>
